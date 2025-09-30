@@ -1,0 +1,76 @@
+    .code-input, .code-output {
+        height: 50vh !important;
+    }
+
+    .copy-icon {
+        position: relative;
+        margin-top: 10px;
+        cursor: pointer;
+        color: #000;
+        font-size: 24px;
+    }
+
+    #convertButton {
+        display: block;
+        margin: 20px auto;
+        width: fit-content;
+    }
+
+    /* Dark mode background and color */
+
+    .dark-mode {
+        background-color: #1a1a1a;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .dark-mode h1 {
+        color: #fff;
+    }
+
+    .dark-mode .code-input,
+    .dark-mode .code-output {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .dark-mode .btn-primary {
+        background-color: #4b4b4b;
+        border-color: #4b4b4b;
+    }
+
+    .dark-mode .copy-icon {
+        color: #fff;
+    }
+
+    .dark-mode::before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        
+        
+        box-shadow: 0px 0px white,
+                    50px 50px white,
+                    100px 150px white,
+                    
+                    /* Continue with more random coordinates for the stars */
+                    ...;
+
+        animation: twinkle 1s infinite alternate;
+    }
+
+    @keyframes twinkle {
+        0% {
+            transform: scale(0.5);
+            opacity: 0.5; 
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1; 
+        }
+    }

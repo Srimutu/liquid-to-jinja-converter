@@ -1,0 +1,9 @@
+# Ignore personal backup directory
+bkup_30092025/
+
+# Ignore common system/temp files
+.cache/
+.local/
+.virtualenvs/
+__pycache__/
+*.pyc
